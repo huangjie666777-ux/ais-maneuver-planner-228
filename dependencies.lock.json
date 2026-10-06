@@ -1,0 +1,26 @@
+{
+  "project": "ais_maneuver228",
+  "language": "C++20",
+  "compiler": "g++11.4.0",
+  "boost": {
+    "version": "1.74.0",
+    "package": "1.74.0-14ubuntu3",
+    "include_dir": ".deps/boost/usr/include",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/b/boost1.74/libboost1.74-dev_1.74.0-14ubuntu3_amd64.deb",
+    "sha256": "4d9c90e43f0d25db6280d1ee326771cbb76462f73b9430f06bac1de8d05b7a78"
+  },
+  "json": {
+    "version": "3.11.3",
+    "include_dir": ".deps/json/include",
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.11.3/single_include/nlohmann/json.hpp",
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
+  },
+  "json_license": {
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.11.3/LICENSE.MIT",
+    "sha256": "86b998c792894ccb911a1cb7994f7a9652894e7a094c0b5e45be2f553f45cf14"
+  },
+  "link_flags": [
+    "-pthread"
+  ],
+  "notes": "Boost.Asio/Beast and Boost.System used as header-only dependencies; links pthread"
+}
